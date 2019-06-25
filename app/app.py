@@ -19,6 +19,8 @@ def sepSentence():
     if request.method == 'POST':
         sen = request.form['content']
         return sen
+    else:
+        return "1234"
         
 
 if __name__ == '__main__':
