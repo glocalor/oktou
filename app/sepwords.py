@@ -1,5 +1,5 @@
 import jieba
 
 def fenci(sentence):
-    seg_list = jieba.cut(sentence, cut_all = True)
-    return seg_list
+    seg_list = jieba.cut(sentence, cut_all = False)
+    return " ".join(seg_list)

@@ -18,7 +18,8 @@ def hello(name=None):
 def sepSentence():
     if request.method == 'POST':
         sen = request.form['content']
-        return sen
+        list = fenci(sen)
+        return list
     else:
         return "1234"
         
