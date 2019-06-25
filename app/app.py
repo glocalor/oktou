@@ -14,13 +14,13 @@ def hello_world():
 def hello(name=None):
     return render_template('hello.html', name=name)
 
-@app.route('/sep', methods=['POST', 'GET'])
+@app.route('/sep/', methods=['POST', 'GET'])
 def sepSentence():
     if request.method == 'POST':
-        sen = request.form['sentence']
-        fenci(sen)
+        sen = request.form['content']
+        return sen
         
 
 if __name__ == '__main__':
-    app.debug = True
+    #app.debug = True
     app.run()
